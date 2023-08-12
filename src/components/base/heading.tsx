@@ -3,6 +3,8 @@ import { VariantProps, cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import { ClassValue } from "clsx";
 
+//comment
+
 const headingVariants = cva("bg-blue-500", {
   variants: {
     color: {

@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -15,6 +15,23 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    fontSize: {
+      xxl: "54px",
+      48: "48px",
+      42: "42px",
+      36: "36px",
+      32: "32px",
+      28: "28px",
+      24: "24px",
+      20: "20px",
+      18: "18px",
+      16: "16px",
+      14: "14px",
+    },
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+      encode: ["Encode Sans Expanded", "sans-serif"],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -22,13 +39,13 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+        primary: "#E9BF97",
+        secondary: "#fdf8f6",
+        black: {
+          100: "#1C1D21 ",
+          75: "#1C1c21 ",
+          50: "#212025 ",
+          25: "#232228 ",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -73,4 +90,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
